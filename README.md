@@ -14,12 +14,47 @@ https://labs.manohara.info/gravitymenu/
 https://labs.manohara.info/gravitymenu/
 ## Basic Usage
 ```
-<script defer src='path/to/simpleScroll.js' id="script_simplescroll"></script>
+<body>
+  <canvas></canvas>
+</body>
+<script defer src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js'></script>
+<script defer src='gravitymenu_min.js'></script>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  garavityMenu({
+    menu_list:[ // label,link,image
+      ['top','#top','image.jpg'],
+      ['contact','#contact','image.jpg'],
+    ],
+  });
+});
+</script>
 ```
 
 ## Options - Sample
 ```
-<script defer src='path/to/simpleScroll.js' id="script_simplescroll" data-color="white" data-border="black" data-bordersize="10" data-size="33"></script>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  garavityMenu({
+    canvas:'canvas', // canvas element default:'canvas', ex.'#canvas'
+    size:50, // menu-circle diameter size(px) default:50
+    gap:5, // circle gap size(px) default:0
+    menu_list:[ // label,link,image
+      ['top','#top','image.jpg'],
+      ['contact','#contact','image.jpg'],
+      ['social','','image.jpg'], // cond. label=='social' and social=='true'
+    ],
+    menu_imageSize:500, // menu-square-image original width(px) default:500
+    social:true, // true or false default:false
+    social_size:40, // social-icon diameter size(px) default:40
+    social_list:[ // label,share-link,image 
+      ['facebook','https://www.facebook.com/sharer.php?u=[page-url]','image.jpg'],
+      ['twitter','https://twitter.com/share?url=[page-url]','image.jpg'],
+    ],
+    social_imageSize:500, // social-square-image original width(px) default:500
+  });
+});
+</script>
 ```
 
 ## Parameters
