@@ -12,6 +12,9 @@ The source code is licensed MIT.
 https://labs.manohara.info/gravitymenu/
 # Usage
 https://labs.manohara.info/gravitymenu/
+
+Square is recommended for icon images.
+
 ## Basic Usage
 ### HTML
 ```
