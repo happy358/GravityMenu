@@ -1,19 +1,23 @@
-# simpleScroll.js
-Smooth Scroll to Top and Bottom.<br/>
+# gravityMenu.js
+GravityMenu.js is a Javascript library.<br/>
+Added gravity menu icon to web pages.<br/>
 Simple and Easy to use.<br/>
-Pure JavaScript Library.
+Pure JavaScript Library.<br/><br/>
+Using Matter.js<br/>
+
+
 # License
 The source code is licensed MIT.
 # Demo
-https://labs.manohara.info/simplescroll/
+https://labs.manohara.info/gravitymenu/
 # Usage
-https://labs.manohara.info/simplescroll/
+https://labs.manohara.info/gravitymenu/
 ## Basic Usage
 ```
 <script defer src='path/to/simpleScroll.js' id="script_simplescroll"></script>
 ```
 
-## Detail Setting - Sample
+## Options - Sample
 ```
 <script defer src='path/to/simpleScroll.js' id="script_simplescroll" data-color="white" data-border="black" data-bordersize="10" data-size="33"></script>
 ```
@@ -26,9 +30,3 @@ data-bordersize: Icon border width,Numeric (default(px): 1)
 data-size: Icon size,Numeric (default(px): 35)
 ```
 
-# Polyfill
-## Scroll-Behavior-polyfill Library : for Safari and Edge
-```
-<script defer src='https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js'></script>
-```
-https://github.com/iamdustan/smoothscroll
