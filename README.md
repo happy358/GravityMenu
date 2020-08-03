@@ -1,4 +1,4 @@
-# gravityMenu.js
+# GravityMenu.js
 GravityMenu.js is a Javascript library.<br/>
 Added gravity menu icon to web pages.<br/><br/>
 Simple and Easy to use.<br/>
@@ -59,9 +59,15 @@ window.addEventListener('DOMContentLoaded', function() {
 
 ## Parameters
 ```
-data-color: Icon color,String (default: grey)
-data-border: Icon border color,String (default: white)
-data-bordersize: Icon border width,Numeric (default(px): 1)
-data-size: Icon size,Numeric (default(px): 35)
+canvas: canvas element, String (default: 'canvas')
+size:  menu-circle diameter size, Numeric (default(px): 50)
+gap: circle gap size, Numeric (default(px): 0)
+menu_list: menu-circle's label,link,image-path, Array
+menu_imageSize: menu-square-image original width(and height), Numeric (default(px): 500)
+
+social: Social active flag, Boolean (default: false)
+social_size: social-icon diameter size, Numeric (default(px): 40)
+social_list: social-circle's label,link,image-path, Array
+social_imageSize: social-square-image original width(and height), Numeric (default(px): 500)
 ```
 
