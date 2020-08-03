@@ -22,7 +22,7 @@ https://labs.manohara.info/gravitymenu/
 <script>
 window.addEventListener('DOMContentLoaded', function() {
   garavityMenu({
-    menu_list:[ // label,link,image
+    menu_list:[
       ['top','#top','image.jpg'],
       ['contact','#contact','image.jpg'],
     ],
@@ -36,22 +36,22 @@ window.addEventListener('DOMContentLoaded', function() {
 <script>
 window.addEventListener('DOMContentLoaded', function() {
   garavityMenu({
-    canvas:'canvas', // canvas element default:'canvas', ex.'#canvas'
-    size:50, // menu-circle diameter size(px) default:50
-    gap:5, // circle gap size(px) default:0
-    menu_list:[ // label,link,image
+    canvas:'canvas',
+    size:50,
+    gap:5,
+    menu_list:[
       ['top','#top','image.jpg'],
       ['contact','#contact','image.jpg'],
       ['social','','image.jpg'], // cond. label=='social' and social=='true'
     ],
-    menu_imageSize:500, // menu-square-image original width(px) default:500
-    social:true, // true or false default:false
-    social_size:40, // social-icon diameter size(px) default:40
-    social_list:[ // label,share-link,image 
+    menu_imageSize:500,
+    social:true,
+    social_size:40,
+    social_list:[
       ['facebook','https://www.facebook.com/sharer.php?u=[page-url]','image.jpg'],
       ['twitter','https://twitter.com/share?url=[page-url]','image.jpg'],
     ],
-    social_imageSize:500, // social-square-image original width(px) default:500
+    social_imageSize:500,
   });
 });
 </script>
