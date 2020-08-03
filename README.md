@@ -1,9 +1,9 @@
 # gravityMenu.js
 GravityMenu.js is a Javascript library.<br/>
-Added gravity menu icon to web pages.<br/>
+Added gravity menu icon to web pages.<br/><br/>
 Simple and Easy to use.<br/>
 Pure JavaScript Library.<br/><br/>
-Using Matter.js<br/>
+Using Matter.js. https://github.com/liabru/matter-js<br/>
 
 
 # License
