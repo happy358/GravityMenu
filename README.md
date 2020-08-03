@@ -13,6 +13,7 @@ https://labs.manohara.info/gravitymenu/
 # Usage
 https://labs.manohara.info/gravitymenu/
 ## Basic Usage
+### HTML
 ```
 <body>
   <section id="top"></section>
@@ -36,6 +37,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 ```
+### CSS
 ```
 canvas {
     position: fixed;
