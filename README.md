@@ -15,20 +15,38 @@ https://labs.manohara.info/gravitymenu/
 ## Basic Usage
 ```
 <body>
-  <canvas></canvas>
+  <section id="top"></section>
+  <section id="contact"></section>
+  <canvas></canvas>  
 </body>
+
 <script defer src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js'></script>
 <script defer src='gravitymenu_min.js'></script>
+
 <script>
 window.addEventListener('DOMContentLoaded', function() {
+
   garavityMenu({
     menu_list:[
       ['top','#top','image.jpg'],
       ['contact','#contact','image.jpg'],
     ],
   });
+
 });
 </script>
+```
+```
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
 ```
 
 ## Options - Sample
