@@ -1,0 +1,224 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    word-break: break-word;
+    box-sizing: border-box;
+    outline: 0;
+    overscroll-behavior-x: none;
+    color: #fff;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px #006e5470;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #006e54;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+::scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px #006e5470;
+}
+::scrollbar-thumb {
+    background-color: #006e54;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+html,
+body {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+}
+html {
+    background: #38b48b;
+}
+body {
+    top: 0;
+    left: 0;
+    font-size: 17px;
+    text-align: center;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.8;
+    font-family: serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    font-weight: bold;
+    line-height: 1;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+a,
+a:before,
+a:after {
+    -moz-transition: color 0.3s 0s ease;
+    -webkit-transition: color 0.3s 0s ease;
+    -o-transition: color 0.3s 0s ease;
+    -ms-transition: color 0.3s 0s ease;
+    transition: color 0.3s 0s ease;
+}
+a,
+a:hover,
+a:active {
+    color: #fff;
+    text-decoration: none;
+    word-break: break-all;
+    outline: 0;
+}
+p > a,
+li > a {
+    text-decoration-style: solid;
+    text-decoration-skip: ink;
+    border-bottom: dotted 2px rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+a img {
+    outline: 0;
+}
+pre,
+code {
+    background: white !important;
+}
+pre,
+pre * {
+    color: #000;
+}
+pre {
+    max-width: 100%;
+    display: inline-block;
+    overflow-x: auto !important;
+}
+code {
+    display: inline-block;
+}
+.wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+#area {
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100% - 1rem - 100px);
+    margin: auto;
+    padding: 0 5%;
+    overflow-y: auto;
+    z-index: 1;
+}
+h1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 5%;
+    padding-bottom: 1rem;
+    font-family: "Segoe Print", "Bradley Hand", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 1px #000;
+    vertical-align: middle;
+    z-index: 1;
+}
+h2 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+h3 {
+    font-family: "Segoe Print", "Bradley Hand", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif;
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-shadow: 1px 1px 1px #000;
+}
+h3:before,
+h3:after {
+    font-family: serif;
+    content: "*";
+    position: absolute;
+    font-size: 3rem;
+    margin-top: -0.5rem;
+    text-shadow: none;
+    width: 3rem;
+    height: 3rem;
+    line-height: 1.5;
+    color: #006e54;
+}
+h3:before {
+    margin-left: -3rem;
+}
+section {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    min-height: 88%;
+    z-index: 1;
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+#area,
+canvas {
+    mix-blend-mode: multiply;
+}
+#copyright {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 1;
+}
+#copyright,
+#copyright * {
+    font-size: 0.9rem;
+    line-height: 1;
+    border: none;
+}
+@media screen and (orientation: portrait) {
+    ::-webkit-scrollbar {
+        width: 0px;
+        display: none;
+    }
+    ::scrollbar {
+        width: 0px;
+    }
+    body {
+        font-size: 15px;
+    }
+}
